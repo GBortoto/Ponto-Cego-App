@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mic_height">200dp</dimen>
+    <dimen name="mic_width">200dp</dimen>
+    <dimen name="peekSize">100dp</dimen>
+    <dimen name="starSize">70dp</dimen>
+</resources>
