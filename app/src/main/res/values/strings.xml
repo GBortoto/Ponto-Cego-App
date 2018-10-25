@@ -2,5 +2,16 @@
     <string name="app_name">Ponto Cego</string>
     <string name="bottom_sheet_peek">Favoritos</string>
     <string name="bottom_sheet_content">Hello there</string>
+    <string name="result_text">Placeholder</string>
     <string name="mic_content_description">Botão de fala</string>
+
+    <string name="reject_btn">Rejeitar</string>
+    <string name="accept_btn">Aceitar</string>
+    <string name="title_activity_reject_">Reject_Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
 </resources>

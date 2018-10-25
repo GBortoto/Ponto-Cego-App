@@ -27,6 +27,7 @@ public class Home extends AppCompatActivity {
 
         Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+        //intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, "pt-BR");
         //intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "pt-BR");
 
@@ -44,8 +45,17 @@ public class Home extends AppCompatActivity {
             stringArrayResult[i] = arrayList.get(i);
         }
         return stringArrayResult;
-
     }
+
+    private static String[] toAr(ArrayList<String> arrayList){
+        String[] stringArrayResult = new String[arrayList.size()];
+
+        for(int i=0; i<arrayList.size(); i++){
+            stringArrayResult[i] = arrayList.get(i);
+        }
+        return stringArrayResult;
+    }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -55,9 +65,12 @@ public class Home extends AppCompatActivity {
             case 10:
                 if (resultCode == RESULT_OK && data != null) {
                     ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+                    float[] confidence_scores = data.getFloatArrayExtra(RecognizerIntent.EXTRA_CONFIDENCE_SCORES);
+
                     Intent intent = new Intent(Home.this, ResultActivity.class);
 
                     intent.putExtra("searchResult", toStringArray(result));
+                    intent.putExtra("confidence_scores", confidence_scores);
                     startActivity(intent);
                 }
                 break;
