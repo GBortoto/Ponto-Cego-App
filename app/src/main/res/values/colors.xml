@@ -3,4 +3,12 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#fbbc05</color>
+
+
+
+    <color name="G_Blue">#4285f4</color>
+    <color name="G_Yellow">#fbbc05</color>
+    <color name="G_Red">#ea4335</color>
+    <color name="G_Green">#34a853</color>
+
 </resources>

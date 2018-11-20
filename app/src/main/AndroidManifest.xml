@@ -17,10 +17,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".ResultActivity" />
-        <activity
-            android:name=".Reject_Activity"
-            android:label="@string/title_activity_reject_"
-            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
