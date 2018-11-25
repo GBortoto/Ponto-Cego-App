@@ -37,13 +37,13 @@ public final class R {
     public static final class color {
         private color() {}
 
-        public static final int notification_action_color_filter = 0x7f060084;
-        public static final int notification_icon_bg_color = 0x7f060085;
-        public static final int notification_material_background_media_default_color = 0x7f060086;
-        public static final int primary_text_default_material_dark = 0x7f060091;
-        public static final int ripple_material_light = 0x7f060096;
-        public static final int secondary_text_default_material_dark = 0x7f060097;
-        public static final int secondary_text_default_material_light = 0x7f060098;
+        public static final int notification_action_color_filter = 0x7f060085;
+        public static final int notification_icon_bg_color = 0x7f060086;
+        public static final int notification_material_background_media_default_color = 0x7f060087;
+        public static final int primary_text_default_material_dark = 0x7f060092;
+        public static final int ripple_material_light = 0x7f060097;
+        public static final int secondary_text_default_material_dark = 0x7f060098;
+        public static final int secondary_text_default_material_light = 0x7f060099;
     }
     public static final class dimen {
         private dimen() {}
@@ -131,9 +131,9 @@ public final class R {
         public static final int tag_unhandled_key_listeners = 0x7f090139;
         public static final int text = 0x7f09013c;
         public static final int text2 = 0x7f09013e;
-        public static final int time = 0x7f09014a;
-        public static final int title = 0x7f09014b;
-        public static final int top = 0x7f090150;
+        public static final int time = 0x7f09014b;
+        public static final int title = 0x7f09014c;
+        public static final int top = 0x7f090151;
     }
     public static final class integer {
         private integer() {}
@@ -163,7 +163,7 @@ public final class R {
     public static final class string {
         private string() {}
 
-        public static final int status_bar_notification_info_overflow = 0x7f0e009d;
+        public static final int status_bar_notification_info_overflow = 0x7f0e009e;
     }
     public static final class style {
         private style() {}

@@ -10,5 +10,7 @@
     <color name="G_Yellow">#fbbc05</color>
     <color name="G_Red">#ea4335</color>
     <color name="G_Green">#34a853</color>
+    <color name="G_Black">#000</color>
+
 
 </resources>

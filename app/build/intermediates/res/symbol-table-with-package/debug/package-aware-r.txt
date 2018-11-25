@@ -692,6 +692,7 @@ bool abc_action_bar_embed_tabs
 bool abc_allow_stacked_button_bar
 bool abc_config_actionMenuItemAllCaps
 bool mtrl_btn_textappearance_all_caps
+color G_Black
 color G_Blue
 color G_Green
 color G_Red
@@ -1913,6 +1914,7 @@ id textSpacerNoTitle
 id textStart
 id textTitle
 id textView
+id textView2
 id text_input_password_toggle
 id text_list_view
 id textinput_counter
@@ -2170,6 +2172,7 @@ string fab_transformation_sheet_behavior
 string fcm_fallback_notification_channel_label
 string gcm_fallback_notification_channel_label
 string hide_bottom_view_on_scroll_behavior
+string home_txt
 string mic_content_description
 string mr_button_content_description
 string mr_cast_button_connected
