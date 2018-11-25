@@ -60,8 +60,8 @@ public class ResultActivity extends AppCompatActivity {
         // ------------------ Accept Button -----------------------------------------
         //final Button accept_btn = findViewById(R.id.accept_btn);
         //accept_btn.setOnClickListener(new View.OnClickListener() {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_home);
+        //    super.onCreate(savedInstanceState);
+        //    setContentView(R.layout.activity_home);
 
             requestPermission();
 
