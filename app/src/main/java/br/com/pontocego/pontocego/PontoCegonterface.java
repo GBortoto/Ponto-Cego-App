@@ -4,7 +4,7 @@ import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.POST;
 
-public interface ServerClientInterface {
+public interface PontoCegonterface {
     @POST("buses")
     Call<ServerResponse> findBus(@Body ServerRequest request);
 }

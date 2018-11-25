@@ -1,11 +1,8 @@
 package br.com.pontocego.pontocego;
 
-import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
-import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,7 +15,6 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnSuccessListener;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 
@@ -36,6 +32,7 @@ public class ResultActivity extends AppCompatActivity {
     private FusedLocationProviderClient client;
 
     ServerRequest request = new ServerRequest();
+    PontoCegoClient pontoCegoClient = new PontoCegoClient();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,8 +57,7 @@ public class ResultActivity extends AppCompatActivity {
         // ------------------ Accept Button -----------------------------------------
         //final Button accept_btn = findViewById(R.id.accept_btn);
         //accept_btn.setOnClickListener(new View.OnClickListener() {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_home);
+
 
             requestPermission();
 
@@ -84,6 +80,7 @@ public class ResultActivity extends AppCompatActivity {
                                 request.setLatitude(location.getLatitude());
                                 request.setLongitude(location.getLongitude());
                                 request.setDesiredLine(result[1]+" "+result[0]);
+                                ServerResponse response = pontoCegoClient.findBus(request);
                             }
 
                         }
