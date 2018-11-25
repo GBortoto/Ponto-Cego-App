@@ -1,14 +1,26 @@
 package br.com.pontocego.pontocego;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.location.Location;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.tasks.OnSuccessListener;
+
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 
 public class ResultActivity extends AppCompatActivity {
 
@@ -20,6 +32,10 @@ public class ResultActivity extends AppCompatActivity {
     // result[0] --> search result text
     // result[1] --> search result numbers
     private String[] result = new String[2];
+
+    private FusedLocationProviderClient client;
+
+    ServerRequest request = new ServerRequest();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,12 +58,39 @@ public class ResultActivity extends AppCompatActivity {
         resultNumberTextView.setText(result[1]);
 
         // ------------------ Accept Button -----------------------------------------
-        final Button accept_btn = findViewById(R.id.accept_btn);
-        accept_btn.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Code here executes on main thread after user presses button
-            }
-        });
+        //final Button accept_btn = findViewById(R.id.accept_btn);
+        //accept_btn.setOnClickListener(new View.OnClickListener() {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_home);
+
+            requestPermission();
+
+            client = LocationServices.getFusedLocationProviderClient(this);
+
+            Button button = findViewById(R.id.accept_btn);
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    if (ActivityCompat.checkSelfPermission( ResultActivity.this, ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+
+                        return;
+                    }
+                    client.getLastLocation().addOnSuccessListener(ResultActivity.this, new OnSuccessListener<Location>() {
+                        @Override
+                        public void onSuccess(Location location) {
+
+                            if (location!=null){
+                                request.setLatitude(location.getLatitude());
+                                request.setLongitude(location.getLongitude());
+                                request.setDesiredLine(result[1]+" "+result[0]);
+                            }
+
+                        }
+                    });
+                }
+            });
+
 
         // ------------------ Reject Button -----------------------------------------
         final Button reject_btn = findViewById(R.id.reject_btn);
@@ -57,9 +100,13 @@ public class ResultActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
     }
+
+
+    private void requestPermission(){
+        ActivityCompat.requestPermissions(this, new String[]{ACCESS_FINE_LOCATION}, 1);
+    }
+
 
     public String charArrayListToString(ArrayList<Character> original){
         StringBuilder result = new StringBuilder(original.size());

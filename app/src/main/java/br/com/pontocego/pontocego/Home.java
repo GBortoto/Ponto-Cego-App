@@ -25,46 +25,12 @@ import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 
 public class Home extends AppCompatActivity {
 
-    private FusedLocationProviderClient client;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
-        requestPermission();
-
-        client = LocationServices.getFusedLocationProviderClient(this);
-
-        Button button = findViewById(R.id.getLocation);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                if (ActivityCompat.checkSelfPermission( Home.this, ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-
-                    return;
-                }
-                client.getLastLocation().addOnSuccessListener(Home.this, new OnSuccessListener<Location>() {
-                    @Override
-                    public void onSuccess(Location location) {
-
-                        if (location!=null){
-                            TextView textViewLat = findViewById(R.id.latitude);
-                            textViewLat.setText(String.valueOf(location.getLatitude()));
-                            TextView textViewLong = findViewById(R.id.longitude);
-                            textViewLong.setText(String.valueOf(location.getLongitude()));
-                        }
-                    }
-                });
-            }
-        });
     }
-
-    private void requestPermission(){
-        ActivityCompat.requestPermissions(this, new String[]{ACCESS_FINE_LOCATION}, 1);
-    }
-
     public void getSpeechInput(View view) {
 
         Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
