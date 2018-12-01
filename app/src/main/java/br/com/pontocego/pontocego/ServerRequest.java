@@ -4,7 +4,7 @@ public class ServerRequest {
     private String desiredLine;
     private Double longitude;
     private Double latitude;
-
+    
     public String getDesiredLine() {
         return desiredLine;
     }

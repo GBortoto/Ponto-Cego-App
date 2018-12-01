@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:2:1-25:12
+ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:2:1-26:12
 MERGED from [com.android.support:design:28.0.0] /home/thiago/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/098a2abc13f6c7c90f06fc37bd288cf8/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-12.0.1.aar/3ea71d5f0ea7fb282d1a84b96f309206/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-cast-framework:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-12.0.1.aar/162e6ab26600d67b0de7a1637f008f0b/AndroidManifest.xml:2:1-14:12
@@ -141,20 +141,20 @@ MERGED from [com.google.android.gms:play-services-vision-common-license:12.0.1] 
 MERGED from [com.google.android.gms:play-services-vision-license:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-vision-license-12.0.1.aar/1d59487403a8058ab5932e3357db5876/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-wallet-license:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-wallet-license-12.0.1.aar/b316959be004f9b83328e47b1da88eb9/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-wearable-license:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-wearable-license-12.0.1.aar/9fc46dbaeba3e06e1a143ae40b42e13c/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:2:1-26:12
 	package
 		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:3:5-41
 		INJECTED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml
 		INJECTED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml
-		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:2:1-25:12
+		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:2:1-26:12
 		INJECTED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml
-		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:2:1-25:12
+		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:2:1-26:12
 		INJECTED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:2:11-69
@@ -166,8 +166,36 @@ uses-permission#android.permission.ACCESS_COARSE_LOCATION
 ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:6:5-81
 	android:name
 		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:6:22-78
+uses-permission#android.permission.INTERNET
+ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:7:5-66
+MERGED from [com.google.android.gms:play-services-ads-lite:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.1.aar/c0199582dd27e2156fba09ec62428587/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.1.aar/c0199582dd27e2156fba09ec62428587/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-analytics:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.1.aar/0d2fc7f93ab12f9b6f919f66a258269d/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-analytics:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.1.aar/0d2fc7f93ab12f9b6f919f66a258269d/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-12.0.1.aar/1235153954dfb4df4c7ceae46edada0d/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-12.0.1.aar/1235153954dfb4df4c7ceae46edada0d/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-appinvite:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-12.0.1.aar/0cccd23a46d4af2421c507a44bd22b8c/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-appinvite:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-12.0.1.aar/0cccd23a46d4af2421c507a44bd22b8c/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-gcm:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-gcm-12.0.1.aar/276d2e06691b7c76e12d13d10738c3de/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-gcm:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-gcm-12.0.1.aar/276d2e06691b7c76e12d13d10738c3de/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-iid:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-iid-12.0.1.aar/c8cf3acdc6939442f607d85bc660853c/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-iid:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-iid-12.0.1.aar/c8cf3acdc6939442f607d85bc660853c/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.1.aar/6040b5200aa216b7dd90a7f4ed5700b5/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.1.aar/6040b5200aa216b7dd90a7f4ed5700b5/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-crash:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/firebase-crash-12.0.1.aar/cda52aef16f6bc05c26f51898c34016f/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-crash:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/firebase-crash-12.0.1.aar/cda52aef16f6bc05c26f51898c34016f/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-tagmanager-api:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.1.aar/c882e58280748aaa713f5125a35285c0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-tagmanager-api:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.1.aar/c882e58280748aaa713f5125a35285c0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.1.aar/370783e2b22a5d90eabf7894b1593991/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.1.aar/370783e2b22a5d90eabf7894b1593991/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.1.aar/a39ccb76b119f1ee65d0bc4a4530f5ed/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.1.aar/a39ccb76b119f1ee65d0bc4a4530f5ed/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/9244ef0688efc662fd2f8dfd3bc9da4b/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/9244ef0688efc662fd2f8dfd3bc9da4b/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:7:22-64
 application
-ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:8:5-23:19
+ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:9:5-24:19
 MERGED from [com.android.support:design:28.0.0] /home/thiago/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/098a2abc13f6c7c90f06fc37bd288cf8/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] /home/thiago/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/098a2abc13f6c7c90f06fc37bd288cf8/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-12.0.1.aar/3ea71d5f0ea7fb282d1a84b96f309206/AndroidManifest.xml:5:5-20
@@ -367,35 +395,35 @@ MERGED from [com.google.android.gms:play-services-wearable-license:12.0.1] /home
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] /home/thiago/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/66485551b6e0b90d877e4df7607ad6d4/AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:11:9-41
+		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:12:9-54
+		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:10:9-43
+		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:14:9-40
+		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:15:9-40
 activity#br.com.pontocego.pontocego.Home
-ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:15:9-21:20
+ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:16:9-22:20
 	android:name
-		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:15:19-39
+		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:16:19-39
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:16:13-20:29
+ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:17:17-69
+ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:17:25-66
+		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:19:17-77
+ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:19:27-74
+		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:20:27-74
 activity#br.com.pontocego.pontocego.ResultActivity
-ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:22:9-52
+ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:23:9-52
 	android:name
-		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:22:19-49
+		ADDED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml:23:19-49
 uses-sdk
 INJECTED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/thiago/git_workspace/Ponto-Cego-App/app/src/main/AndroidManifest.xml
@@ -706,32 +734,6 @@ MERGED from [com.android.support:palette-v7:26.1.0] /home/thiago/.gradle/caches/
 		ADDED from [com.android.support:mediarouter-v7:26.1.0] /home/thiago/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/9c3114856d9a5fecd7d82ff79cf91705/AndroidManifest.xml:25:13-35
 	android:name
 		ADDED from [com.android.support:mediarouter-v7:26.1.0] /home/thiago/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/9c3114856d9a5fecd7d82ff79cf91705/AndroidManifest.xml:24:13-51
-uses-permission#android.permission.INTERNET
-ADDED from [com.google.android.gms:play-services-ads-lite:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.1.aar/c0199582dd27e2156fba09ec62428587/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-analytics:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.1.aar/0d2fc7f93ab12f9b6f919f66a258269d/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-analytics:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.1.aar/0d2fc7f93ab12f9b6f919f66a258269d/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-analytics-impl:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-12.0.1.aar/1235153954dfb4df4c7ceae46edada0d/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-analytics-impl:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-12.0.1.aar/1235153954dfb4df4c7ceae46edada0d/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-appinvite:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-12.0.1.aar/0cccd23a46d4af2421c507a44bd22b8c/AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-appinvite:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-12.0.1.aar/0cccd23a46d4af2421c507a44bd22b8c/AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-gcm:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-gcm-12.0.1.aar/276d2e06691b7c76e12d13d10738c3de/AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-gcm:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-gcm-12.0.1.aar/276d2e06691b7c76e12d13d10738c3de/AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-iid:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-iid-12.0.1.aar/c8cf3acdc6939442f607d85bc660853c/AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-iid:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-iid-12.0.1.aar/c8cf3acdc6939442f607d85bc660853c/AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-maps:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.1.aar/6040b5200aa216b7dd90a7f4ed5700b5/AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-maps:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.1.aar/6040b5200aa216b7dd90a7f4ed5700b5/AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-crash:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/firebase-crash-12.0.1.aar/cda52aef16f6bc05c26f51898c34016f/AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-crash:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/firebase-crash-12.0.1.aar/cda52aef16f6bc05c26f51898c34016f/AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-tagmanager-api:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.1.aar/c882e58280748aaa713f5125a35285c0/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-tagmanager-api:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.1.aar/c882e58280748aaa713f5125a35285c0/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-analytics:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.1.aar/370783e2b22a5d90eabf7894b1593991/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-analytics:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.1.aar/370783e2b22a5d90eabf7894b1593991/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.1.aar/a39ccb76b119f1ee65d0bc4a4530f5ed/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.1.aar/a39ccb76b119f1ee65d0bc4a4530f5ed/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-iid:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/9244ef0688efc662fd2f8dfd3bc9da4b/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-iid:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/9244ef0688efc662fd2f8dfd3bc9da4b/AndroidManifest.xml:23:5-67
-	android:name
-		ADDED from [com.google.android.gms:play-services-ads-lite:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.1.aar/c0199582dd27e2156fba09ec62428587/AndroidManifest.xml:23:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.android.gms:play-services-ads-lite:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.1.aar/c0199582dd27e2156fba09ec62428587/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-analytics:12.0.1] /home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.1.aar/0d2fc7f93ab12f9b6f919f66a258269d/AndroidManifest.xml:24:5-79

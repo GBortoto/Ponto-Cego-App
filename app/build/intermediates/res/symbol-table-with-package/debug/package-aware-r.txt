@@ -696,6 +696,7 @@ color G_Black
 color G_Blue
 color G_Green
 color G_Red
+color G_White
 color G_Yellow
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light

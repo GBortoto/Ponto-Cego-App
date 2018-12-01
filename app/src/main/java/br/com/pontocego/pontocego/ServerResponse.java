@@ -1,8 +1,8 @@
 package br.com.pontocego.pontocego;
 
 public class ServerResponse {
-    String busId;
-    Long lastBusStop;
+    private String busId;
+    private Long lastBusStop;
 
     public String getBusId() {
         return busId;
