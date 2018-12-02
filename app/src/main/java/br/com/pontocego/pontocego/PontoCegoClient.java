@@ -1,54 +1,27 @@
 package br.com.pontocego.pontocego;
 
+import com.squareup.okhttp.MediaType;
+import com.squareup.okhttp.OkHttpClient;
+import com.squareup.okhttp.Request;
+import com.squareup.okhttp.RequestBody;
+import com.squareup.okhttp.Response;
+
 import java.io.IOException;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.jackson.JacksonConverterFactory;
 
 public class PontoCegoClient {
+    private static final MediaType JSON
+            = MediaType.parse("application/json; charset=utf-8");
 
-    public PontoCegoInterface buildClient(){
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://localhost:8080") //Dps criar aplication properties para injetar url
-                .addConverterFactory(JacksonConverterFactory.create())
+    OkHttpClient client = new OkHttpClient();
+
+    String post(String url, String json) throws IOException {
+        RequestBody body = RequestBody.create(JSON, json);
+        Request request = new Request.Builder()
+                .url(url)
+                .post(body)
                 .build();
-
-        return retrofit.create(PontoCegoInterface.class);
-    }
-
-    public ServerResponse findBus(final ServerRequest request) {
-        PontoCegoInterface client = buildClient();
-
-        Call<ServerResponse> call = client.findBus(request);
-
-        call.enqueue(new Callback<ServerResponse>() {
-            @Override
-            public void onResponse(Call<ServerResponse> call, Response<ServerResponse> response) {
-
-                if(!response.isSuccessful()) {
-                    // exemplo para receber response code
-                    // textViewResult.setText("Code: " + response.code());
-                    return;
-                }
-
-                ServerResponse post = response.body();
-                
-
-
-            }
-
-            @Override
-            public void onFailure(Call<ServerResponse> call, Throwable t) {
-
-            }
-        });
-
-        try {
-            return client.findBus(request).execute().body();
-        } catch (IOException Ex) {
-            throw new RuntimeException();
-        }
+        Response response = client.newCall(request).execute();
+        return response.body().string();
     }
 }
+

@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.gson.Gson;
 
 import java.util.ArrayList;
 
@@ -32,7 +33,7 @@ public class ResultActivity extends AppCompatActivity {
     private FusedLocationProviderClient client;
 
     ServerRequest request = new ServerRequest();
-    PontoCegoClient pontoCegoClient = new PontoCegoClient();
+    PontoCegoClient PCClient = new PontoCegoClient();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,7 +80,14 @@ public class ResultActivity extends AppCompatActivity {
                                 request.setLatitude(location.getLatitude());
                                 request.setLongitude(location.getLongitude());
                                 request.setDesiredLine(result[1]+" "+result[0]);
-                                ServerResponse response = pontoCegoClient.findBus(request);
+                                Gson gson = new Gson();
+                                String requestJSON = gson.toJson(request);
+                                try {
+                                    PCClient.post("http://3.16.15.147:8080/buses/",requestJSON);
+                                } catch (Exception ex) {
+                                    ex.printStackTrace();
+                                }
+
                             }
 
                         }
