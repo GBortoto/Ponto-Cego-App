@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/thiago/git_workspace/Ponto-Cego-App/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/home/thiago/github_workspace/Ponto-Cego-App/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
                     "source": "/home/thiago/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/de610067f76bd4602bb5db5f356f1261/res/values-v24/values-v24.xml",

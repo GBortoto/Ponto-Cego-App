@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/thiago/git_workspace/Ponto-Cego-App/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-el/values-el.xml",
+            "outputFile": "/home/thiago/github_workspace/Ponto-Cego-App/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-el/values-el.xml",
             "map": [
                 {
                     "source": "/home/thiago/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-12.0.1.aar/162e6ab26600d67b0de7a1637f008f0b/res/values-el/values.xml",

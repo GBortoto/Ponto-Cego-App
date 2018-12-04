@@ -3,9 +3,11 @@ package br.com.pontocego.pontocego;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
+import android.nfc.Tag;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -14,7 +16,11 @@ import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.gson.Gson;
+import com.squareup.okhttp.Callback;
+import com.squareup.okhttp.Request;
+import com.squareup.okhttp.Response;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
@@ -34,6 +40,7 @@ public class ResultActivity extends AppCompatActivity {
 
     ServerRequest request = new ServerRequest();
     PontoCegoClient PCClient = new PontoCegoClient();
+    private static final String TAG = "msg";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,18 +90,31 @@ public class ResultActivity extends AppCompatActivity {
                                 Gson gson = new Gson();
                                 String requestJSON = gson.toJson(request);
                                 try {
-                                    PCClient.post("http://3.16.15.147:8080/buses/",requestJSON);
-                                } catch (Exception ex) {
-                                    ex.printStackTrace();
+                                    PCClient.post("http://3.16.15.147:8080/buses/", requestJSON, new Callback() {
+                                        @Override
+                                        public void onFailure(Request request, IOException e) {
+                                            Log.e(TAG, "Erro: " + e.getMessage());
+                                        }
+
+                                        @Override
+                                        public void onResponse(Response response) throws IOException {
+                                            if(response.isSuccessful()) {
+                                                String responseStr = response.body().string();
+                                                Log.i(TAG, "OK " + responseStr);
+                                            } else {
+                                                Log.i(TAG, "Request mal sucedida");
+                                            }
+                                        }
+
+                                    });
+                                } catch (IOException e) {
+                                    e.printStackTrace();
                                 }
-
                             }
-
                         }
                     });
                 }
             });
-
 
         // ------------------ Reject Button -----------------------------------------
         final Button reject_btn = findViewById(R.id.reject_btn);
